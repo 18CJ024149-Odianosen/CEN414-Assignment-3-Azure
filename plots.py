@@ -15,7 +15,7 @@ def bar_plots(df):
             df[df['Time Period'] == year]['Observation Value'].plot.barh(ax=axes[idx])
             axes[idx].set_title(year)    
         
-        fig.savefig(f'./static/images/hbars3_{i}.png')
+        fig.savefig(f'./static/images/Azure1.png')
 
 def dispersion_plots(df):
     plt.figure(figsize=(10,10))
