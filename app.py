@@ -17,7 +17,7 @@ def refresh_plots():
 
     
     #get and mutate dataframe 
-    for i in range(1,10)
+    for i in range(1,10):
         df = pd.read_csv(f'Homicide{i}_Database.csv')
 
         df.pivot_table(index='Country', columns = 'Sex', values = f'{2009+i}').plot(kind = 'bar', figsize=(15,5))
